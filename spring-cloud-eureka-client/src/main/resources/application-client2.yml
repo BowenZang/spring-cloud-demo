@@ -1,0 +1,13 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: client
+
+eureka:
+  instance:
+    namespace: client
+  client:
+    service-url:
+      defaultZone: http://peer1:8000/eureka/, http://peer2:8001/eureka/
