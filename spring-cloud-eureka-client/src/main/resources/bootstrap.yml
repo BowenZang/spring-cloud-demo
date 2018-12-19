@@ -1,6 +1,7 @@
 server:
   port: 9000
 
+# 暴漏服务的服务应用名
 spring:
   application:
     name: clientA

@@ -37,11 +37,13 @@
 			<scope>test</scope>
 		</dependency>
 		
+		<!-- springcloud系统监控 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 		
+		<!-- springcloud上下文，（导入它才能激活bootstrap.yml文件） -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-context</artifactId>

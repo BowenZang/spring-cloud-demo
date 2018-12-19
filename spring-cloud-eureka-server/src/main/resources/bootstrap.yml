@@ -1,10 +1,18 @@
 server:
   port: 8000
+
+# 实例host名
 eureka:
   instance:
     hostname: localhost
   client:
+    # 是否获取服务
     fetch-registry: false
+    # 是否将自己注册进注册中心
     register-with-eureka: false
+    # 服务地址
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  # 是否启用springcloud保护模式（本地调试不启用，可能会出现页面的红色字体，服务存在调用不通的情况）
+  server:
+    enable-self-preservation: false
