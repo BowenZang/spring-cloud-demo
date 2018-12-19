@@ -10,3 +10,5 @@ eureka:
   client:
     service-url:
       defaultZone: http://peer2:8001/eureka/
+  server:
+    enable-self-preservation: false
