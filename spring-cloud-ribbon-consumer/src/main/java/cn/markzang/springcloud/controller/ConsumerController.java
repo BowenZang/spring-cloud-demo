@@ -27,6 +27,7 @@ public class ConsumerController {
 	
 	@GetMapping(value = "/hello")
 	public String hello() throws InterruptedException {
+		// 超过2000毫秒，断路器就会生效，但是测试并不是这样 TODO
 		Integer sleepTime = new Random().nextInt(30000);
 		log.info("sleepTime: {}", sleepTime);
 		Thread.sleep(sleepTime);
