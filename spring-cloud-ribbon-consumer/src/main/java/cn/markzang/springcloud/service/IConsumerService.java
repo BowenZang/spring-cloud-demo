@@ -10,6 +10,8 @@ public interface IConsumerService {
 	
 	String helloConsumer();
 	
-	String helloForBack();
+	String users(String id);
+	
+	String users();
 	
 }
