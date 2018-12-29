@@ -111,6 +111,17 @@ public class ConsumerServiceImpl implements IConsumerService {
 		return new User("third user");
 	}
 	
-	
+	/**
+	 * <h3>
+	 *		注解方式分别指定命令名称、分组和线程池划分
+	 * </h3>
+	 *
+	 * @param userId
+	 * @return
+	 */
+	@HystrixCommand(commandKey = "getUserById", groupKey = "UserGroup", threadPoolKey = "getUserThread")
+	public User getUserByIdFourth(String userId) {
+		return restTemplate.getForObject("http://client/user/{1}", User.class, userId);
+	}
 	
 }

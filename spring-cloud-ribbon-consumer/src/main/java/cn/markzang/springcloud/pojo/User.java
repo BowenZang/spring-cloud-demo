@@ -30,6 +30,8 @@ public class User implements Serializable {
 		this.gender = gender;
 	}
 	
+	private Long id;
+	
 	private String name;
 	
 	private Integer age;
@@ -38,6 +40,14 @@ public class User implements Serializable {
 	 * 1:男 2:女 3:未知
 	 */
 	private Integer gender;
+	
+	public Long getId() {
+		return id;
+	}
+	
+	public void setId(Long id) {
+		this.id = id;
+	}
 	
 	public String getName() {
 		return name;
@@ -72,17 +82,18 @@ public class User implements Serializable {
 			return false;
 		}
 		User user = (User) o;
-		return Objects.equals(name, user.name) && Objects.equals(age, user.age) && Objects.equals(gender, user.gender);
+		return Objects.equals(id, user.id) && Objects.equals(name, user.name) && Objects.equals(age, user.age)
+				&& Objects.equals(gender, user.gender);
 	}
 	
 	@Override
 	public int hashCode() {
-		return Objects.hash(name, age, gender);
+		return Objects.hash(id, name, age, gender);
 	}
 	
 	@Override
 	public String toString() {
-		return "User{" + "name='" + name + '\'' + ", age=" + age + ", gender=" + gender + '}';
+		return "User{" + "id=" + id + ", name='" + name + '\'' + ", age=" + age + ", gender=" + gender + '}';
 	}
 	
 }
