@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Objects;
 
 /**
- * **** 该 java 文件的说明 ****
+ * User实体类
  *
  * @author BowenZang
  * @since 2018年12月25日
