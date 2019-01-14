@@ -13,6 +13,10 @@ public class User implements Serializable {
 	
 	private static final long serialVersionUID = 7503399025564870303L;
 	
+	/**
+	 * 使用spring cloud feign时，必须提供默认的构造函数
+	 * 不然在根据JSON字符串转换User对象的时候会抛出异常（需要翻看源码）
+	 */
 	public User() {
 	}
 	

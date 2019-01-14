@@ -10,6 +10,9 @@
 		<module>spring-cloud-hystrix-dashboard</module>
 		<module>spring-cloud-turbine</module>
 		<module>spring-cloud-turbine-amqp</module>
+		<module>spring-cloud-feign-consumer</module>
+		<module>spring-cloud-common</module>
+		<module>spring-cloud-hello-service-api</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
