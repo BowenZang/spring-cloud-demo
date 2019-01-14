@@ -7,6 +7,7 @@ import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
@@ -22,6 +23,7 @@ import org.springframework.web.client.RestTemplate;
 //上面三个注解可以用@SpringCloudApplication代替
 
 @SpringCloudApplication
+@EnableHystrix
 public class SpringCloudRibbonConsumer {
 	
 	/**
