@@ -11,7 +11,7 @@ import org.springframework.cloud.openfeign.FeignClient;
  * @author BowenZang
  * @since 2019年01月14日
  */
-@FeignClient(value = "client")
+@FeignClient(value = "client1")
 public interface RefactorHelloService extends HelloService {
 	
 }

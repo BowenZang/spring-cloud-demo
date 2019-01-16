@@ -1,6 +1,7 @@
 package cn.markzang.springcloud.service;
 
 import cn.markzang.springcloud.pojo.User;
+import cn.markzang.springcloud.service.fallback.HelloServiceFallBack;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author BowenZang
  * @since 2019年01月14日
  */
-@FeignClient(value = "client1")
+@FeignClient(value = "client", fallback = HelloServiceFallBack.class)
 public interface HelloService {
 	
 	@GetMapping("/")
