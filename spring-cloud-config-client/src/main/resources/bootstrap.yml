@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: didispace
+  cloud:
+    config:
+      label: master
+      profile: dev
+      uri: http://localhost:2000/

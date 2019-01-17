@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    config:
+      uri: http://localhost:2000/
+server:
+  port: 5556
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
