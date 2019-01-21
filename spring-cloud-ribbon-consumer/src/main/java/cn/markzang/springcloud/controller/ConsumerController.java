@@ -1,7 +1,5 @@
 package cn.markzang.springcloud.controller;
 
-import cn.markzang.springcloud.command.UserCommand;
-import cn.markzang.springcloud.pojo.User;
 import cn.markzang.springcloud.service.IConsumerService;
 import java.util.Random;
 import lombok.extern.slf4j.Slf4j;
