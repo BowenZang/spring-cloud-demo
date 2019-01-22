@@ -9,22 +9,18 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	
-	<artifactId>spring-cloud-rabbitmq-hello</artifactId>
+	<artifactId>spring-cloud-stream-hello</artifactId>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-stream-binder-rabbit</artifactId>
-		</dependency>
-		
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-stream-rabbit</artifactId>
 		</dependency>
 		
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
-		</dependency>
+		<!-- 与上面的等价 -->
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.cloud</groupId>-->
+			<!--<artifactId>spring-cloud-stream-binder-rabbit</artifactId>-->
+		<!--</dependency>-->
 	</dependencies>
 </project>

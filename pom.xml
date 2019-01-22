@@ -18,6 +18,8 @@
 		<module>spring-cloud-api-gateway-dynamic-route</module>
 		<module>spring-cloud-api-gateway-dynamic-filter</module>
 		<module>spring-cloud-rabbitmq-hello</module>
+		<module>spring-cloud-kafka-hello</module>
+		<module>spring-cloud-stream-hello</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
