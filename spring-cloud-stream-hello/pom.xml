@@ -22,5 +22,17 @@
 			<!--<groupId>org.springframework.cloud</groupId>-->
 			<!--<artifactId>spring-cloud-stream-binder-rabbit</artifactId>-->
 		<!--</dependency>-->
+		
+		<dependency>
+			<groupId>cn.markzang</groupId>
+			<artifactId>spring-cloud-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
+		<!-- 基于rxjava的响应式编程，该jar包导入失败，不存在？后续测试，先理解什么是响应式编程 TODO -->
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.cloud</groupId>-->
+			<!--<artifactId>spring-cloud-stream-rxjava</artifactId>-->
+		<!--</dependency>-->
 	</dependencies>
 </project>
